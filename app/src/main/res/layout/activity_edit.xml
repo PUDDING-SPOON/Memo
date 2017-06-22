@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.whisk.schedulememo.EditActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:background="@drawable/check" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="80dip"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingTop="5dip"/>
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/timeSet"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:background="@drawable/clock"/>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_below="@id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:cursorVisible="true"
+        android:visibility="visible"
+        android:gravity="top"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:bufferType="normal"
+        android:textColor="#000000"/>
+</RelativeLayout>

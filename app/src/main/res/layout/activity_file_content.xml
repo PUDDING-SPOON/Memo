@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.whisk.schedulememo.FileContent">
+
+    <Button
+        android:id="@+id/addfile"
+        android:layout_width="75dip"
+        android:layout_height="75dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/addfile"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:text="文件夹"
+            android:textSize="30dp" />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:divider="@color/divider_color"
+            android:dividerHeight="1dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
